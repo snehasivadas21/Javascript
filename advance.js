@@ -55,12 +55,9 @@
 // const isEven = (number) => { return number%2===0}
 // console.log(isEven(16))
 
-const numbers = [10, 20, 30, 40, 50];
-const double = numbers.map((num)=>{return num*2})
-console.log(double)
-
-// const getUser = () => ({name:"aaa",age:67})
-// console.log(getUser())
+// const numbers = [10, 20, 30, 40, 50];
+// const double = numbers.map((num)=>{return num*2})
+// console.log(double)
 
 // callback
 // function greet(name, callback){
@@ -160,3 +157,89 @@ console.log(double)
 // };
 // const jsonData = JSON.stringify(user);
 // console.log(jsonData);
+
+// const jsonData = '{"name":"Rahul","age":25}';
+// const user = JSON.parse(jsonData);
+// console.log(user);
+
+// closure
+// function counter(){
+//   let count = 0
+//   return function () {
+//     count++;
+//     console.log(count);
+//   };
+// }
+// const increment = counter();
+
+// increment();
+// increment();
+// increment();
+
+// curring
+// function add(a){
+//   return function(b){
+//     return a+b;
+//   }
+// }
+// console.log(add(10)(30))
+
+// const add = (a) => (b) => a+b
+// console.log(add(10)(20));
+
+// built-in collection type
+// Map
+// const student = new Map();
+
+// student.set(1,"aa");
+// student.set(2,"bb");
+// student.set(3,"cc");
+
+// console.log(student.get(1));
+
+// console.log(student.has(9));
+
+// student.delete(1);
+// console.log(student.size)
+
+// student.clear();
+// console.log(student)
+
+// Set
+// const number = new Set();
+
+// number.add(10)
+// number.add(20)
+// number.add(30)
+// console.log(number);
+
+// const number = [10,20,30,40,20,10]
+// const uniquenumber = [...new Set(number)];
+// console.log(uniquenumber);
+
+// memoization
+// function memoizedSquare() {
+
+//     const cache = {};
+
+//     return function (n) {
+
+//         if (cache[n]) {
+//             console.log("Getting from cache...");
+//             return cache[n];
+//         }
+
+//         console.log("Calculating...");
+
+//         const result = n * n;
+
+//         cache[n] = result;
+
+//         return result;
+//     };
+// }
+
+// const square = memoizedSquare();
+
+// console.log(square(5));
+// console.log(square(5));
