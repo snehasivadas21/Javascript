@@ -15,12 +15,12 @@
 // for (let i=0;i<=10;i++)
 // console.log(fib(i))
 
-function rev_string (name) {
-    let stored= ""
-    for (let i=name.length-1;i>=0;i--){
-        stored+=name[i]       
-    }
-    return stored
+// function rev_string (name) {
+//     let stored= ""
+//     for (let i=name.length-1;i>=0;i--){
+//         stored+=name[i]       
+//     }
+//     return stored
 
-}
-console.log(rev_string(name="string"))
+// }
+// console.log(rev_string(name="string"))

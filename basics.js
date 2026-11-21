@@ -47,6 +47,19 @@
 // }
 // console.log(multiply(4,5))
 
+// const getPostive = (arr) => arr.filter(a=>a>0)
+// const arr = [-1,2,3,-9,7]
+// console.log(getPostive(arr))
+
+function getPostive (arr) {
+    for (let i=0 ; i < arr.length ; i++){
+        if (arr[i]>0) {
+            console.log(arr[i])
+        }
+    }
+}
+getPostive([-2,9,3,-4,2,-7])
+
 // string
 // let text = "Js"
 // let text1 = "Power"
